@@ -13,8 +13,10 @@ $background-color:#f0f0f0
     margin: 0 auto
     padding-top: 16px
 .main-section
-    min-height:880px
+    position: relative
+    min-height: 880px
     background-color: $background-color
+    z-index: 1
     &__logo
         width: 152px
     &__nav-container
@@ -22,6 +24,8 @@ $background-color:#f0f0f0
         justify-content: space-between
         align-items: center
         height: 70px
+    &__content-container
+        display: flex    
 
 .nav-menu
     &__list
@@ -32,8 +36,67 @@ $background-color:#f0f0f0
         font-weight: 600
         list-style-type: none
         a
-            text-decoration: none
-    
+            text-decoration: none       
+
+.left-wrapper
+    position: relative
+    &__img
+        // z-index: -4
+        position: relative
+    &__rectangle-blue
+        position: absolute
+        height: 220px
+        width: 565px
+        background-color: $color-blue
+        transform: rotate(115deg)
+        top: 150px
+        left: -42px
+        border-radius: 100px
+        z-index: -3
+    &__rectangle-orange
+        position: absolute
+        height: 220px
+        width: 620px
+        background-color: $color-orange
+        transform: rotate(133deg)
+        top: 162px
+        left: -4px
+        border-radius: 100px
+        z-index: -2
+    &__rectangle-grey
+        position: absolute
+        height: 220px
+        width: 618px
+        background-color: $color-grey
+        transform: rotate(144deg)
+        top: 190px
+        left: 20px
+        border-radius: 100px
+        z-index: -3
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 // $background-color1:green
 // $background-color2:blue
