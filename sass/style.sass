@@ -16,6 +16,7 @@ $box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25)
 .main-section
     position: relative
     min-height: 880px
+    overflow: hidden
     background-color: $background-color
     z-index: 1
     &__logo
@@ -116,7 +117,6 @@ $box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25)
     top: 125px
     &__text
         margin-bottom: 20px
-    
 
 .buttons
     display: flex
@@ -147,7 +147,6 @@ $box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25)
         font-size: 16px
 
 .ring
-
     display: flex
     z-index: -10
     justify-content: center
@@ -163,6 +162,26 @@ $box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25)
         background-color: $background-color
         display: block
         border-radius: 50%
+    &_big
+        height: 285px   
+        width: 285px
+        &::before
+            height: 190px
+            width: 190px
+
+.section-courses
+    min-height: 700px
+    position: relative
+    overflow: hidden
+    &__container
+        padding-top: 30px
+    &__title
+        padding-bottom: 40px
+    &__cards-box
+        display: flex
+        gap: 30px
+    &__icons-box
+        display: flex
 
 // $background-color1:green
 // $background-color2:blue
